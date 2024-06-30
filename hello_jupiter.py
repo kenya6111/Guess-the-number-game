@@ -49,4 +49,9 @@ def guess_number_game():
     print("答えは..." + str(target))
 
 if __name__ == "__main__":
-    guess_number_game()
+    while True:
+        guess_number_game()
+        play_again = input("もう一度プレイしますか？ y/n: ")
+        if play_again != "y":
+            print("ゲームを終了します")
+            break
