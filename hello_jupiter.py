@@ -1,32 +1,49 @@
-import sys;
 import random;
 
-min = int(input("最小値を入力してください"))
-max = int(input("最大値を入力してください"))
+def get_input(prompt):
+    # 標準入力から整数値を取得する
+    return int(input(prompt))
 
-while min > max:
-    if min > max:
-        max=int(input("最小値より大きい最大値を設定してください"))
+def get_random_number(min_value, max_value):
+    # min_valueとmax_valueの間のランダムな整数を生成する
+    return random.randint(min_value, max_value)
 
-# 答え
-target = int(random.uniform(min, max))
-# ユーザの回答
-answer = int(input("数字を当ててください"))
+min_value = get_input("最小値を入力してください")
+max_value = get_input("最大値を入力してください")
+
+# 最小値が最大値より大きくないか確認
+while min_value > max_value:
+    if min_value > max_value:
+        print("入力値が不正です。最小値が最大値より大きいです")
+        min_value=get_input("最小値を入力してください")
+        max_value = get_input("最大値を入力してください")
 
 # 回答制限回数
 inputLimitTimes=5
 # 現在の回答回数カウント
-currInputTime=0
+currInputTime=1
+
+target = get_random_number(min_value, max_value)
+
+print(str(min_value)+"~"+str(max_value)+"の中から正解の数字を当ててください")
+
+answer = int(input("1回目!"))
 
 while(answer != target):
     if(currInputTime>inputLimitTimes):
-        print("制限回数を超えました。残念でした！")
+        print("回答制限回数を超えました。残念でした！")
         break
 
-    answer = int(input("残念！数字を当ててください"))
+    if(answer == target):
+        print("あたりです！")
+        break
+    elif(answer > target):
+        print("もっと小さいです！")
+    else: 
+        print("もっと大きいです")
+
+    answer = int(input(str(currInputTime)+"回目！..."))
     currInputTime+=1
-    
-    
 
 print("答えは..." + str(target))
 
