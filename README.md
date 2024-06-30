@@ -50,33 +50,6 @@ Pythonがインストールされているかは、下記コマンドで確認�
 python3 --version
 ```
 
-### pip
-pipは、Python用のパッケージマネージャで、パッケージのインストールと管理を行うことができます。
-
-[pipのインストールガイド](https://pip.pypa.io/en/stable/installation/)に従って、pipをインストールしてください。
-
-aptを使用してpipをインストールする場合は、下記手順でインストールしてください。
-
-1. pipがインストールされているか確認する。<br>`pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)` のように表示された場合は、pipがインストールされています。<br>以降の手順はスキップしてください。
-```
-pip3 --version
-```
-
-2. システムを更新する
-```
-sudo apt-get update
-```
-
-3. pipをインストールする
-```
-sudo apt install python3-pip
-```
-
-4. pipがインストールされたことを確認する。<br>`pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)` のように表示されていれば、pipのインストールは完了です!
-```
-pip3 --version
-```
-
 ## 🙋使用例
 一通りの手順のイメージは[デモ](#デモ)を参考にしてください。
 
