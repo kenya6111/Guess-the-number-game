@@ -106,14 +106,6 @@ pip3 --version
 </tr>
 </table>
 
-## 👀機能一覧
-![image](https://github.com/Aki158/Markdown-to-HTML-Converter/assets/119317071/e38f9ff0-4e14-4f40-92e3-736bed508215)
-
-| 機能 | 内容 |
-| ------- | ------- |
-| markdown | markdownをhtmlに変換します。 |
-| エラーハンドリング | コマンドが正しく入力されていない場合は、下記のようなメッセージが表示されて終了します。<br>・inputpathが存在しない場合:`Inputfile does not exist...`<br>・入力されるコマンドが4つではない場合:<br>　`　Wrong usage!`<br>　`useage : python3 file-converter.py markdown inputfile outputfile`<br>入力されたコマンドが、markdownでない場合:`Command not found...` |
-
 ## 📜作成の経緯
 ⭐️後で記載する!!!
 
