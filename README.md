@@ -118,16 +118,8 @@ pip3 --version
 
 ここがエンジニアに一番読んでもらいたい箇所なのでできるだけ詳細に書く。
 
-## 📮今後の実装したいもの
-- [x] オンラインでエディタに記述したMarkdownをHTMLへ変換できるサービスを作成する
+
 
 ## 📑参考文献
 ### 公式ドキュメント
 - [Python](https://docs.python.org/ja/3/)
-
-### 参考にしたサイト
-- [Python_Download](https://www.python.org/downloads/)
-- [pipのインストールガイド](https://pip.pypa.io/en/stable/installation/)
-- [markdownのプロジェクトの説明](https://pypi.org/project/Markdown/)
-- [Markdown記法一覧](https://qiita.com/oreo/items/82183bfbaac69971917f#:~:text=Markdown%EF%BC%88%E3%83%9E%E3%83%BC%E3%82%AF%E3%83%80%E3%82%A6%E3%83%B3%EF%BC%89%E3%81%AF%E3%80%81,%E3%82%82%E9%96%8B%E7%99%BA%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82)
-- [HTML の基本](https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/HTML_basics)
